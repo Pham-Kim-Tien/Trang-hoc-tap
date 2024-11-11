@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Trang học tập cho học sinh lớp 5</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap|Trirong" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,56 +36,58 @@
 
     <!-- Các phần nội dung học tập -->
     <section id="math" style="display: none;">
-        <h2>Môn Toán - Nội dung theo Tuần</h2>
+        <h2>Môn Toán - Các dạng toán có lời văn điển hình</h2>
         
-        <!-- Mục Tuần -->
+        <!-- Mục Dạng Toán -->
         <ul class="week-list">
-        <li onclick="showWeekContent(1)">Tuần 1</li>
-        <li onclick="showWeekContent(2)">Tuần 2</li>
-        <li onclick="showWeekContent(3)">Tuần 3</li>
+        <li onclick="showWeekContent(1)">Dạng toán tổng tỉ</li>
+        <li onclick="showWeekContent(2)">Dạng toán hiệu tỉ</li>
         </ul>
 
-    <!-- Nội dung từng tuần -->
+    <!-- Nội dung từng dạng -->
     <div id="week-content">
         <div id="week-1" class="week-detail" style="display: none;">
-            <h4>Tuần 1: Phép Cộng và Phép Trừ</h4>
+            <h4>Dạng toán tổng tỉ</h4>
             <ul>
                 <li onclick="showSubContent('week-1-knowledge')">Kiến Thức Cần Nhớ</li>
-                <li onclick="showSubContent('week-1-exercise')">Bài Tập Vận Dụng</li>
+                <li><a href="bài tập vận dụng dạng 1.html">Bài Tập Vận Dụng</a></li>
             </ul>
             <div id="week-1-knowledge" class="sub-detail" style="display: none;">
-                <h5>Kiến Thức Cần Nhớ</h5>
-                <p>Nội dung về phép cộng và phép trừ.</p>
+              <p>Cách giải:</p>
+              <div class="steps">
+              <div class="step">Bước 1: Xác định tổng và tỉ số của hai số</div>
+              <div class="step">Bước 2: Tình tổng số phần bằng nhau</div>
+              <div class="step">Bước 3: Tính giá trị một phần</div>
+              <div class="step">Bước 4: Số lớn bằng: Giá trị một phần x Số phần số lớn</div>
+              <div class="step">Bước 5: Số bé bằng: Tổng - Số lớn</div>
             </div>
+        </div>
             <div id="week-1-exercise" class="sub-detail" style="display: none;">
                 <h5>Bài Tập Vận Dụng</h5>
-                <p>Các bài tập thực hành về phép cộng và trừ.</p>
             </div>
         </div>
 
         <div id="week-2" class="week-detail" style="display: none;">
-            <h4>Tuần 2: Phép Nhân và Phép Chia</h4>
+            <h4>Dạng toán hiệu tỉ</h4>
             <ul>
                 <li onclick="showSubContent('week-2-knowledge')">Kiến Thức Cần Nhớ</li>
-                <li onclick="showSubContent('week-2-exercise')">Bài Tập Vận Dụng</li>
+                <li><a href="bài tập vận dụng dạng 2.html">Bài Tập Vận Dụng</a></li>
             </ul>
             <div id="week-2-knowledge" class="sub-detail" style="display: none;">
-                <h5>Kiến Thức Cần Nhớ</h5>
-                <p>Nội dung về phép nhân và phép chia.</p>
+                <p>Cách giải:</p>
+              <div class="steps">
+              <div class="step">Bước 1: Xác định hiệu và tỉ số của hai số</div>
+              <div class="step">Bước 2: Tình hiệu số phần bằng nhau</div>
+              <div class="step">Bước 3: Tính giá trị một phần</div>
+              <div class="step">Bước 4: Số lớn bằng: Giá trị một phần x Số phần số lớn</div>
+              <div class="step">Bước 5: Số bé bằng: Số lớn - Hiệu</div>
             </div>
+          </div>
             <div id="week-2-exercise" class="sub-detail" style="display: none;">
                 <h5>Bài Tập Vận Dụng</h5>
-                <p>Các bài tập thực hành về phép nhân và chia.</p>
             </div>
         </div>
-        <!-- Thêm các tuần khác tương tự -->
-
-        <!-- Liên kết quay lại danh sách tuần -->
-        <p><a href="#" onclick="showWeekList()">Quay lại danh sách tuần</a></p>
-    </div>
-    </section>
-        <!-- Liên kết quay về trang chủ -->
-        <p><a href="index.html">Quay về trang chủ</a></p>
+        <!-- Thêm các dạng khác tương tự -->
     </section>
 
     <!-- Chân trang -->
@@ -108,15 +116,27 @@
         const allWeekDetails = document.querySelectorAll('.week-detail');
         allWeekDetails.forEach(detail => detail.style.display = 'none');
 
-        // Hiển thị nội dung của tuần đã chọn
+        // Hiển thị nội dung của dạng toán đã chọn
         const selectedWeek = document.getElementById(`week-${weekNumber}`);
         if (selectedWeek) {
             selectedWeek.style.display = 'block';
         }
     }
 
+    function showSubContent(subContentId) {
+        // Ẩn tất cả nội dung con
+        const allSubContents = document.querySelectorAll('.sub-detail');
+        allSubContents.forEach(content => content.style.display = 'none');
+
+        // Hiển thị nội dung con đã chọn
+        const selectedSubContent = document.getElementById(subContentId);
+        if (selectedSubContent) {
+            selectedSubContent.style.display = 'block';
+        }
+    }
+
     function showWeekList() {
-        // Hiển thị lại danh sách tuần
+        // Hiển thị lại danh sách dạng toán
         document.querySelector('.week-list').style.display = 'block';
 
         // Ẩn tất cả các nội dung tuần
