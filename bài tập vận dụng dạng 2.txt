@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Vận Dụng</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap|Trirong" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Đảm bảo rằng bạn liên kết đúng tệp CSS -->
+    <style>
+        .exercise-content {
+            font-family: 'Baloo 2', sans-serif; /* Chọn phông chữ */
+            font-size: clamp(0.75rem, 2.4vw, 2.5rem); /* Kích thước chữ điều chỉnh tự động */
+            color: #333; /* Điều chỉnh màu chữ */
+            line-height: 1.5; /* Tăng khoảng cách giữa các dòng */
+        }
+
+        .exercise {
+            display: flex;
+            flex-direction: column; /* Đảm bảo các phần tử nằm theo chiều dọc */
+            margin-bottom: -25px; /* Tăng khoảng cách giữa các bài tập */
+        }
+
+       /* Lớp đặc biệt cho bài 2 để điều chỉnh khoảng cách giữa các dòng */
+       .long-question {
+           line-height: 1.2; /* Khoảng cách giữa các dòng trong đề bài */
+           margin-bottom: 0; /* Khoảng cách dưới phần nội dung bài 2 */
+       }
+
+        /* Media Query cho thiết bị có chiều rộng nhỏ hơn 768px */
+        @media (max-width: 768px) {
+            body {
+                margin: 5px;
+            }
+
+            .exercise-content {
+                font-size: 1.1rem; /* Giảm kích thước chữ */
+            }
+
+            .exercise {
+                padding: 0px;
+                margin-bottom: -17px; /* Giảm khoảng cách giữa các bài tập */
+            }
+
+            .exercise p {
+                line-height: 1; /* Giảm khoảng cách dòng */
+                margin-bottom: -5px;
+            }
+
+            .exercise a {
+            font-size: clamp(1rem, 2vw, 2rem); /* Kích thước chữ điều chỉnh tự động */
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nội dung của trang Bài Tập Vận Dụng -->
+    <header>
+        <h1>Bài Tập Vận Dụng</h1>
+    </header>
+    <div class="exercise-content">
+        <div class="exercise">
+            <p class="long-question"><strong>Bài 1<strong>: Hiệu của hai số là 36. Tỉ số của hai số đó là 8/5. Tìm hai số đó.</p>
+            <a href="lời giải bài 1 dạng 2.html" target="_self">Lời giải</a>
+        </div>
+
+        <div class="exercise">
+            <p class="long-question">Bài 2: Một cửa hàng có số bao ngô ít hơn số bao gạo là 360 bao. Tính số bao mỗi loại. Biết rằng số bao ngô bằng 1/6 số bao gạo.</p>
+            <a href="lời giải bài 2 dạng 2.html" target="_self">Lời giải</a>
+        </div>
+
+        <div class="exercise">
+            <p class="long-question">Bài 3: Hình chữ nhật có chiều dài bằng 3/2 chiều rộng. Nếu tăng chiều rộng 20m thì hình chữ nhật trở thành hình vuông. Tính diện tích của hình chữ nhật?</p>
+            <a href="lời giải bài 3 dạng 2.html" target="_self">Lời giải</a>
+        </div>
+
+        <div class="exercise">
+            <p class="long-question">Bài 4: Năm nay con kém mẹ 24 tuổi và tuổi con bằng 1/4 tuổi mẹ. Tuổi con năm nay là :</p>
+            <a href="lời giải bài 4 dạng 2.html" target="_self">Lời giải</a>
+        </div>
+    </div>
+</body>
+</html>
