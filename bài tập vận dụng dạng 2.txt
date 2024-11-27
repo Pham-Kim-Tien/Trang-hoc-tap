@@ -77,7 +77,7 @@
         </div>
 
         <div class="exercise">
-            <p class="long-question">Bài 3: Hình chữ nhật có chiều dài bằng 3/2 chiều rộng. Nếu tăng chiều rộng 20m thì hình chữ nhật trở thành hình vuông. Tính diện tích của hình chữ nhật?</p>
+            <p class="long-question">Bài 3: Hình chữ nhật có chiều dài bằng 3/2 chiều rộng. Biết chiều rộng ngắn hơn chiều dài 20m. Tính diện tích của hình chữ nhật?</p>
             <a href="lời giải bài 3 dạng 2.html" target="_self">Lời giải</a>
         </div>
 
