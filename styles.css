@@ -14,12 +14,12 @@ header {
     color: #FF6347;
     padding: 40px;
     text-align: center;
-    font-size: clamp(1rem, 3vw, 3rem); /* Kích thước chữ điều chỉnh tự động */
+    font-size: clamp(2rem, 3vw, 3rem); /* Kích thước chữ điều chỉnh tự động */
 }
 
 header h1 {
     font-family: 'Fredoka One', sans-serif;
-    font-size: clamp(2rem, 5vw, 5rem); /* Kích thước chữ điều chỉnh tự động */
+    font-size: clamp(3rem, 5vw, 5.3rem); /* Kích thước chữ điều chỉnh tự động */
     color: #FF6347; /* Màu chữ tươi sáng, có thể thay đổi nếu cần */
     text-align: center;
     margin: 0;
@@ -47,7 +47,7 @@ nav ul li a {
     padding: 14px 20px;
     display: inline-block;
     font-family: 'Fredoka One', sans-serif;
-    font-size: clamp(1rem, 3vw, 3rem); /* Kích thước chữ điều chỉnh tự động */
+    font-size: clamp(2.1rem, 3.2vw, 3.2rem); /* Kích thước chữ điều chỉnh tự động */
 }
 
 nav ul li a:hover {
@@ -58,11 +58,16 @@ nav ul li a:hover {
 /* Trang chủ */
 #home {
     background: url('images/hinh-nen1.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    color: #FF6347;
-    padding: 27vh 49vh;
-    text-align: center;
+    background-size:  cover;
+    background-position: center; /* Căn giữa hình nền */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    background-attachment: fixed; /* Giúp hình nền cố định và thu phóng cùng màn hình */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Chiều cao toàn màn hình */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button {
@@ -88,14 +93,14 @@ section h2 {
     justify-content: center; /* Căn giữa toàn bộ danh sách */
     font-family: 'Fredoka One', sans-serif;
     text-align: center;
-    font-size: 32px;
+    font-size: clamp(2.5rem, 3vw, 3.5rem); /* Kích thước chữ điều chỉnh tự động */
     color: #4CAF50;
 }
 
 .week-list {
     justify-content: center; /* Căn giữa toàn bộ danh sách */
     font-family: 'Baloo 2', sans-serif;
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem); /* Kích thước chữ điều chỉnh tự động */
+    font-size: clamp(1.2rem, 2.5vw, 2.5rem); /* Kích thước chữ điều chỉnh tự động */
     list-style-type: none;
     padding: 0;
     color: yellow;
@@ -181,17 +186,17 @@ section h2 {
 }
 
 #math h2 {
-    font-size: clamp(1rem, 3vw, 3rem); /* Kích thước chữ điều chỉnh tự động */
+    font-size: clamp(1.2rem, 3vw, 3rem); /* Kích thước chữ điều chỉnh tự động */
     margin: 0;
     white-space: nowrap;
 }
 
 .steps {
+    align-items: center;
     text-align: left;  /* Căn lề trái cho nhóm các bước */
     white-space: nowrap;  /* Ngăn các phần tử xuống dòng */
     overflow: visible;  /* Hiển thị mọi văn bản tràn ra ngoài nếu cần */
-    margin-top: -10px;  /* Dịch lên trên */
-    margin-left: 250px;  /* Dịch sang phải */
+    margin-left: 30px;  /* Dịch sang phải */
 }
 
 .step {
@@ -220,11 +225,15 @@ footer {
     }
 
     #home h2 {
-        font-size: 2rem; /* Điều chỉnh kích thước chữ để vừa màn hình nhỏ */
+    font-size: clamp(2rem, 3vw, 3rem); /* Kích thước chữ điều chỉnh tự động */
     }
 
     #home p {
-        font-size: 1rem;
+    font-size: clamp(2rem, 3vw, 3rem); /* Kích thước chữ điều chỉnh tự động */
+    }
+
+    #home a {
+    font-size: clamp(2rem, 3vw, 3rem); /* Kích thước chữ điều chỉnh tự động */
     }
 
     #home .button {
