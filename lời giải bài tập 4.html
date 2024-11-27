@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lời Giải</title>
+    <link href="https://fonts.googleapis.com/css2?family=Trirong&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap|Trirong" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Đảm bảo rằng bạn liên kết đúng tệp CSS -->
+   <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Baloo 2', sans-serif; /* Chọn phông chữ */
+            font-size: clamp(1rem, 2vw, 2.5rem); /* Kích thước chữ điều chỉnh tự động */
+            line-height: 0.2;
+            margin: 10px;
+        }
+        h1 {
+            color: green;
+            margin-bottom: 0px;
+        }
+      h2 {
+            text-decoration: underline; /* Gạch chân */
+            color: green;
+            margin-bottom: 0px;
+        }
+
+         /* Căn giữa khối chứa bài giải */
+         .solution {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         flex-direction: column; /* Đảm bảo các dòng nằm dưới nhau theo chiều dọc */
+}
+        .solution-step {
+            margin-bottom: 0px;
+            line-height: 0.5;
+            font-size: clamp(1rem, 2.3vw, 2.5rem); /* Kích thước chữ điều chỉnh tự động */
+        }
+       img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+        .diagram-container {
+        text-align: left; /* Giữ nội dung ở giữa màn hình theo chiều ngang */
+        margin-top: 20px; /* Khoảng cách phía trên nếu cần */
+        max-width: 100%; /* Đảm bảo ảnh phản hồi tốt trên thiết bị di động */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Toán</h1>
+    </header>
+
+    <h2>Bài Giải</h2>
+
+   <div class="diagram-container">
+            <img src="images/so-do-doan-thang-bai4-dang1.jpg"
+    </div>
+
+    <div class="solution">
+        <p class="solution-step"><strong>Tổng số phần bằng nhau là:<strong></p>
+        <p class="solution-step">3 + 1 = 4 ( phần )</p>
+        <p class="solution-step">Giá trị một phần là:</p>
+        <p class="solution-step">28 : 4 = 7</p>
+        <p class="solution-step">Đoạn dây thứ nhất dài số m là:</p>
+        <p class="solution-step">7 x 3 = 21 ( m )</p>
+        <p class="solution-step">Đoạn dây thứ hai dài số m là:</p>
+        <p class="solution-step">28 - 21 = 7 ( m )</p>
+        <p class="solution-step">Đáp số: Đoạn dây thứ nhất: 21 m, Đoạn dây thứ 2: 7m</p>
+    </div>
+</body>
+</html>
