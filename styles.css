@@ -93,7 +93,7 @@ section h2 {
     justify-content: center; /* Căn giữa toàn bộ danh sách */
     font-family: 'Fredoka One', sans-serif;
     text-align: center;
-    font-size: clamp(2.5rem, 3vw, 3.5rem); /* Kích thước chữ điều chỉnh tự động */
+    font-size: clamp(2.3rem, 3vw, 3.5rem); /* Kích thước chữ điều chỉnh tự động */
     color: #4CAF50;
 }
 
@@ -186,7 +186,7 @@ section h2 {
 }
 
 #math h2 {
-    font-size: clamp(1.2rem, 3vw, 3rem); /* Kích thước chữ điều chỉnh tự động */
+    font-size: clamp(1rem, 3vw, 3rem); /* Kích thước chữ điều chỉnh tự động */
     margin: 0;
     white-space: nowrap;
 }
