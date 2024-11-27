@@ -19,11 +19,16 @@
             align-items: center;
             text-align: center;
             font-family: 'Baloo 2', sans-serif; /* Chọn phông chữ */
-            font-size: clamp(0.5rem, 2vw, 2.5rem); /* Kích thước chữ điều chỉnh tự động */
+            font-size: clamp(1rem, 2vw, 2.5rem); /* Kích thước chữ điều chỉnh tự động */
             line-height: 0.2;
             margin: 10px;
         }
         h1 {
+            color: green;
+            margin-bottom: 0px;
+        }
+        h2 {
+            text-decoration: underline; /* Gạch chân */
             color: green;
             margin-bottom: 0px;
         }
@@ -39,16 +44,31 @@
         .solution-step {
             margin-bottom: 0px;
             line-height: 0.5;
-            font-size: clamp(0.75rem, 2.3vw, 2.5rem); /* Kích thước chữ điều chỉnh tự động */
+            font-size: clamp(1rem, 2.3vw, 2.5rem); /* Kích thước chữ điều chỉnh tự động */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+        .diagram-container {
+        text-align: left; /* Giữ nội dung ở giữa màn hình theo chiều ngang */
+        margin-top: 20px; /* Khoảng cách phía trên nếu cần */
+        max-width: 100%; /* Đảm bảo ảnh phản hồi tốt trên thiết bị di động */
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Lời Giải Bài 2</h1>
+        <h1>Toán</h1>
     </header>
 
-    <h1>Bài Giải</h1>
+    <h2>Bài Giải</h2>
+
+    <div class="diagram-container">
+            <img src="images/so-do-doan-thang-bai2-dang1.jpg"
+    </div>
 
     <div class="solution">
         <p class="solution-step"><strong>Tổng số phần bằng nhau là:<strong></p>
