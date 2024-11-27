@@ -49,13 +49,13 @@
         <div id="week-1" class="week-detail" style="display: none;">
             <h4>Dạng toán tổng tỉ</h4>
             <ul>
-                <li onclick="showSubContent('week-1-knowledge')">Kiến Thức Cần Nhớ</li>
-                <li><a href="bài tập vận dụng dạng 1.html">Bài Tập Vận Dụng</a></li>
+                <li onclick="showSubContent('week-1-knowledge')"><strong>Kiến Thức Cần Nhớ<strong></li>
+                <li><a href="bài tập vận dụng dạng 1.html"><strong>Bài Tập Vận Dụng<strong></a></li>
             </ul>
             <div id="week-1-knowledge" class="sub-detail" style="display: none;">
-              <p>Cách giải:</p>
+              <p><strong>Cách giải:<strong></p>
               <div class="steps">
-              <div class="step">Bước 1: Xác định tổng và tỉ số của hai số</div>
+              <div class="step">Bước 1: Vẽ sơ đồ</div>
               <div class="step">Bước 2: Tính tổng số phần bằng nhau</div>
               <div class="step">Bước 3: Tính giá trị một phần</div>
               <div class="step">Bước 4: Số lớn bằng: Giá trị một phần x Số phần số lớn</div>
@@ -76,7 +76,7 @@
             <div id="week-2-knowledge" class="sub-detail" style="display: none;">
                 <p>Cách giải:</p>
               <div class="steps">
-              <div class="step">Bước 1: Xác định hiệu và tỉ số của hai số</div>
+              <div class="step">Bước 1: Vẽ sơ đồ</div>
               <div class="step">Bước 2: Tính hiệu số phần bằng nhau</div>
               <div class="step">Bước 3: Tính giá trị một phần</div>
               <div class="step">Bước 4: Số lớn bằng: Giá trị một phần x Số phần số lớn</div>
@@ -92,7 +92,7 @@
 
     <!-- Chân trang -->
     <footer>
-        <p>&copy; 2024 Trang học tập cho học sinh lớp 5</p>
+        <p>&copy; 2024 Trang học tập cho học sinh lớp 5 - Tác giả: Phạm Kim Tiến</p>
     </footer>
 
   <!-- JavaScript để điều khiển nội dung động -->
