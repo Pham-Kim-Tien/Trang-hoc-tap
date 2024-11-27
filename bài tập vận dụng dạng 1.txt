@@ -31,6 +31,32 @@
            line-height: 1.2; /* Khoảng cách giữa các dòng trong đề bài */
            margin-bottom: 0; /* Khoảng cách dưới phần nội dung bài 2 */
        }
+
+        /* Media Query cho thiết bị có chiều rộng nhỏ hơn 768px */
+        @media (max-width: 768px) {
+            body {
+                margin: 5px;
+            }
+
+            .exercise-content {
+                font-size: 1.1rem; /* Giảm kích thước chữ */
+            }
+
+            .exercise {
+                padding: 0px;
+                margin-bottom: -17px; /* Giảm khoảng cách giữa các bài tập */
+            }
+
+            .exercise p {
+                line-height: 1; /* Giảm khoảng cách dòng */
+                margin-bottom: -5px;
+            }
+
+            .exercise a {
+            font-size: clamp(1rem, 2vw, 2rem); /* Kích thước chữ điều chỉnh tự động */
+                margin-top: 5px;
+            }
+        }
     </style>
 </head>
 <body>
